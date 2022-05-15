@@ -1,0 +1,8 @@
+from PIL import Image
+img = Image.open(r"C:\Users\user\Pictures\Camera Roll\2.jpg")
+
+bw_image = img.convert('L')
+bw_image.show()
+
+cropped = img.crop((0, 0, 1080, 1080))
+cropped.show()
